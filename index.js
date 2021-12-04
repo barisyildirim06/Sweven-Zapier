@@ -8,6 +8,7 @@ const userTrigger = require('./src/triggers/user');
 const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
 const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
 const usersHiddenTrigger = require('./src/hidden-triggers/users');
+const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
 /* Creates */
 const noteCreate = require('./src/creates/note');
 const {
@@ -40,6 +41,7 @@ module.exports = {
   
     /* Hidden Triggers */
     [projectsHiddenTrigger.key]: projectsHiddenTrigger,
+    [sitesHiddenTrigger.key]: sitesHiddenTrigger,
     [ticketsHiddenTrigger.key]: ticketsHiddenTrigger,
     [usersHiddenTrigger.key]: usersHiddenTrigger,
   },
