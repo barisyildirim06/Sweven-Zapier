@@ -8,42 +8,42 @@ const ticketInputFields = [
         altersDynamicFields: true,
         required: true
     },
-    {
-        key: 'priority_id',
-        label: 'Priority ID',
-        type: 'integer',
-        helpText: 'Choose a Priority',
-        dynamic: 'priorities.id',
-        altersDynamicFields: true,
-        required: true
-    },
-    {
-        key: 'type_id',
-        label: 'Type ID',
-        type: 'integer',
-        helpText: 'Choose a Type',
-        dynamic: 'types.id',
-        altersDynamicFields: true,
-        required: true
-    },
-    {
-        key: 'status_id',
-        label: 'Status ID',
-        type: 'integer',
-        helpText: 'Choose a Status',
-        dynamic: 'statuses.id',
-        altersDynamicFields: true,
-        required: true
-    },
-    {
-        key: 'sub_status_id',
-        label: 'Sub Status ID',
-        type: 'integer',
-        helpText: 'Choose a Sub Status',
-        dynamic: 'substatuses.id',
-        altersDynamicFields: true,
-        required: true
-    },
+    // {
+    //     key: 'priority_id',
+    //     label: 'Priority ID',
+    //     type: 'integer',
+    //     helpText: 'Choose a Priority',
+    //     dynamic: 'priorities.id',
+    //     altersDynamicFields: true,
+    //     required: true
+    // },
+    // {
+    //     key: 'type_id',
+    //     label: 'Type ID',
+    //     type: 'integer',
+    //     helpText: 'Choose a Type',
+    //     dynamic: 'types.id',
+    //     altersDynamicFields: true,
+    //     required: true
+    // },
+    // {
+    //     key: 'status_id',
+    //     label: 'Status ID',
+    //     type: 'integer',
+    //     helpText: 'Choose a Status',
+    //     dynamic: 'statuses.id',
+    //     altersDynamicFields: true,
+    //     required: true
+    // },
+    // {
+    //     key: 'sub_status_id',
+    //     label: 'Sub Status ID',
+    //     type: 'integer',
+    //     helpText: 'Choose a Sub Status',
+    //     dynamic: 'substatuses.id',
+    //     altersDynamicFields: true,
+    //     required: true
+    // },
     {
         key: 'client_id',
         label: 'Client ID',

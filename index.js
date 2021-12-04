@@ -5,12 +5,15 @@ const noteTrigger = require('./src/triggers/note');
 const projectTrigger = require('./src/triggers/project');
 const userTrigger = require('./src/triggers/user');
 /* Hidden Triggers */
+const clientsHiddenTrigger = require('./src/hidden-triggers/clients');
 const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
 const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
 const usersHiddenTrigger = require('./src/hidden-triggers/users');
 const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
 /* Creates */
 const noteCreate = require('./src/creates/note');
+const ticketCreate = require('./src/creates/ticket');
+
 const {
   config: authentication,
   befores = [],
@@ -40,6 +43,8 @@ module.exports = {
     [userTrigger.key]: userTrigger,
   
     /* Hidden Triggers */
+    
+    [clientsHiddenTrigger.key]: clientsHiddenTrigger,
     [projectsHiddenTrigger.key]: projectsHiddenTrigger,
     [sitesHiddenTrigger.key]: sitesHiddenTrigger,
     [ticketsHiddenTrigger.key]: ticketsHiddenTrigger,
@@ -52,6 +57,7 @@ module.exports = {
   // If you want your creates to show up, you better include it here!
   creates: {
     [noteCreate.key]: noteCreate,
+    [ticketCreate.key]: ticketCreate,
   },
 
   resources: {},
