@@ -49,7 +49,7 @@ const ticketInputFields = [
         label: 'Client ID',
         type: 'integer',
         helpText: 'Choose a Client',
-        dynamic: 'clients.id.name',
+        dynamic: 'clients.id.client_name',
         altersDynamicFields: true,
         required: true
     },
