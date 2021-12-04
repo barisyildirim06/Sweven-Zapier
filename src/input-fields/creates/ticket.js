@@ -4,7 +4,7 @@ const ticketInputFields = [
         label: 'User Assign ID',
         type: 'integer',
         helpText: 'Choose an User Assign ID',
-        dynamic: 'users.id',
+        dynamic: 'users.id.email',
         altersDynamicFields: true,
         required: true
     },
@@ -49,7 +49,7 @@ const ticketInputFields = [
         label: 'Client ID',
         type: 'integer',
         helpText: 'Choose a Client',
-        dynamic: 'clients.id',
+        dynamic: 'clients.id.name',
         altersDynamicFields: true,
         required: true
     },
@@ -58,7 +58,7 @@ const ticketInputFields = [
         label: 'Project ID',
         type: 'integer',
         helpText: 'Choose a Project',
-        dynamic: 'projects.id',
+        dynamic: 'projects.id.name',
         altersDynamicFields: true,
         required: true
     },
@@ -67,7 +67,7 @@ const ticketInputFields = [
         label: 'Site ID',
         type: 'integer',
         helpText: 'Choose a Site',
-        dynamic: 'sites.id',
+        dynamic: 'sites.id.name',
         altersDynamicFields: true,
         required: true
     },
