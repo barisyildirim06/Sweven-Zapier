@@ -4,9 +4,10 @@ const contactTrigger = require('./src/triggers/contact');
 const noteTrigger = require('./src/triggers/note');
 const projectTrigger = require('./src/triggers/project');
 const userTrigger = require('./src/triggers/user');
-/* Triggers */
-const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
+/* Hidden Triggers */
 const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
+const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
+const usersHiddenTrigger = require('./src/hidden-triggers/users');
 /* Creates */
 const noteCreate = require('./src/creates/note');
 const {
@@ -38,8 +39,9 @@ module.exports = {
     [userTrigger.key]: userTrigger,
   
     /* Hidden Triggers */
-    [ticketsHiddenTrigger.key]: ticketsHiddenTrigger,
     [projectsHiddenTrigger.key]: projectsHiddenTrigger,
+    [ticketsHiddenTrigger.key]: ticketsHiddenTrigger,
+    [usersHiddenTrigger.key]: usersHiddenTrigger,
   },
   
   // If you want your searches to show up, you better include it here!
