@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { subStatusSample } = require('../samples/sub-status');
+const { subStatusSample } = require('../samples/sub-status');
 
 const listSubStatuses = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -14,7 +14,7 @@ const listSubStatuses = async (z, bundle) => {
         },
         params: {}
     })
-    console.log(subStatusesGetRequest);
+
     const subStatuses = JSON.parse(subStatusesGetRequest.content).sub_status;
 
     return subStatuses;
@@ -30,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listSubStatuses,
-        // sample: subStatusSample
+        sample: subStatusSample
     }
 }
