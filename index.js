@@ -10,6 +10,7 @@ const vendorTrigger = require('./src/triggers/vendor');
 /* Hidden Triggers */
 const clientSubStatusesHiddenTrigger = require('./src/hidden-triggers/client-sub-statuses');
 const clientsHiddenTrigger = require('./src/hidden-triggers/clients');
+const divisionsHiddenTrigger = require('./src/hidden-triggers/divisions');
 const prioritiesHiddenTrigger = require('./src/hidden-triggers/priorities');
 const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
 const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
@@ -59,6 +60,7 @@ module.exports = {
     /* Hidden Triggers */
     [clientSubStatusesHiddenTrigger.key]: clientSubStatusesHiddenTrigger,
     [clientsHiddenTrigger.key]: clientsHiddenTrigger,
+    [divisionsHiddenTrigger.key]: divisionsHiddenTrigger,
     [prioritiesHiddenTrigger.key]: prioritiesHiddenTrigger,
     [projectsHiddenTrigger.key]: projectsHiddenTrigger,
     [sitesHiddenTrigger.key]: sitesHiddenTrigger,
