@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { prioritiesample } = require('../samples/priority');
+const { prioritySample } = require('../samples/priority');
 
 const listPriorities = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -30,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listPriorities,
-        // sample: prioritiesample
+        sample: prioritySample
     }
 }
