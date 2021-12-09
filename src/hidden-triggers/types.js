@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { typeSample } = require('../samples/type');
+const { typeSample } = require('../samples/type');
 
 const listTypes = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -30,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listTypes,
-        // sample: typeSample
+        sample: typeSample
     }
 }
