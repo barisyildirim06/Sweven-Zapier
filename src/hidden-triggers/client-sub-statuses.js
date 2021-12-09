@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { clientSubStatusSample } = require('../samples/sub-status');
+const { clientSubStatusSample } = require('../samples/client-sub-status');
 
 const listClientSubStatuses = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -30,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listClientSubStatuses,
-        // sample: clientSubStatusSample
+        sample: clientSubStatusSample
     }
 }
