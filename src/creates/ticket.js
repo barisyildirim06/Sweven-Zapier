@@ -7,7 +7,7 @@ const createticket = async (z, bundle) => {
     const login = await loginRequest(z, bundle);
 
     const ticketsPostRequest = await z.request({
-        url: `${env.apiServer}/ticket/create`,
+        url: `${env.apiServer}/work-order/create`,
         method: 'POST',
         headers: {
             'Accept': 'application/json',
