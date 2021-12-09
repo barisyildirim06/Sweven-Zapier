@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { statusSample } = require('../samples/status');
+const { statusSample } = require('../samples/status');
 
 const listStatuses = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -15,7 +15,6 @@ const listStatuses = async (z, bundle) => {
         params: {}
     })
 
-    console.log(statusesGetRequest);
     const statuses = JSON.parse(statusesGetRequest.content).status;
 
     return statuses;
@@ -31,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listStatuses,
-        // sample: statusSample
+        sample: statusSample
     }
 }
