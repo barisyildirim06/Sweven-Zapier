@@ -5,6 +5,7 @@ const noteTrigger = require('./src/triggers/note');
 const projectTrigger = require('./src/triggers/project');
 const ticketTrigger = require('./src/triggers/ticket');
 const userTrigger = require('./src/triggers/user');
+const vendorTrigger = require('./src/triggers/vendor');
 /* Hidden Triggers */
 const clientsHiddenTrigger = require('./src/hidden-triggers/clients');
 const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
@@ -15,6 +16,7 @@ const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
 const noteCreate = require('./src/creates/note');
 const projectCreate = require('./src/creates/project');
 const ticketCreate = require('./src/creates/ticket');
+const vendorCreate = require('./src/creates/vendor');
 
 const {
   config: authentication,
@@ -44,6 +46,7 @@ module.exports = {
     [projectTrigger.key]: projectTrigger,
     [ticketTrigger.key]: ticketTrigger,
     [userTrigger.key]: userTrigger,
+    [vendorTrigger.key]: vendorTrigger,
   
     /* Hidden Triggers */
     
@@ -62,6 +65,7 @@ module.exports = {
     [noteCreate.key]: noteCreate,
     [projectCreate.key]: projectCreate,
     [ticketCreate.key]: ticketCreate,
+    [vendorCreate.key]: vendorCreate,
   },
 
   resources: {},
