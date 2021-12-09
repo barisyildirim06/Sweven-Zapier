@@ -23,6 +23,7 @@ const usersHiddenTrigger = require('./src/hidden-triggers/users');
 const clientCreate = require('./src/creates/client');
 const noteCreate = require('./src/creates/note');
 const projectCreate = require('./src/creates/project');
+const subProjectCreate = require('./src/creates/sub-project');
 const ticketCreate = require('./src/creates/ticket');
 const vendorCreate = require('./src/creates/vendor');
 
@@ -79,6 +80,7 @@ module.exports = {
     [clientCreate.key]: clientCreate,
     [noteCreate.key]: noteCreate,
     [projectCreate.key]: projectCreate,
+    [subProjectCreate.key]: subProjectCreate,
     [ticketCreate.key]: ticketCreate,
     [vendorCreate.key]: vendorCreate,
   },
