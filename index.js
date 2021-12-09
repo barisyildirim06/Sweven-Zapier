@@ -8,11 +8,12 @@ const userTrigger = require('./src/triggers/user');
 const vendorTrigger = require('./src/triggers/vendor');
 /* Hidden Triggers */
 const clientsHiddenTrigger = require('./src/hidden-triggers/clients');
-const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
-const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
-const usersHiddenTrigger = require('./src/hidden-triggers/users');
-const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
 const prioritiesHiddenTrigger = require('./src/hidden-triggers/priorities');
+const projectsHiddenTrigger = require('./src/hidden-triggers/projects');
+const sitesHiddenTrigger = require('./src/hidden-triggers/sites');
+const ticketsHiddenTrigger = require('./src/hidden-triggers/tickets');
+const typesHiddenTrigger = require('./src/hidden-triggers/types');
+const usersHiddenTrigger = require('./src/hidden-triggers/users');
 /* Creates */
 const noteCreate = require('./src/creates/note');
 const projectCreate = require('./src/creates/project');
@@ -56,6 +57,7 @@ module.exports = {
     [projectsHiddenTrigger.key]: projectsHiddenTrigger,
     [sitesHiddenTrigger.key]: sitesHiddenTrigger,
     [ticketsHiddenTrigger.key]: ticketsHiddenTrigger,
+    [typesHiddenTrigger.key]: typesHiddenTrigger,
     [usersHiddenTrigger.key]: usersHiddenTrigger,
   },
   
