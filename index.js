@@ -21,6 +21,7 @@ const typesHiddenTrigger = require('./src/hidden-triggers/types');
 const usersHiddenTrigger = require('./src/hidden-triggers/users');
 /* Creates */
 const clientCreate = require('./src/creates/client');
+const contactCreate = require('./src/creates/contact');
 const noteCreate = require('./src/creates/note');
 const projectCreate = require('./src/creates/project');
 const subProjectCreate = require('./src/creates/sub-project');
@@ -78,6 +79,7 @@ module.exports = {
   // If you want your creates to show up, you better include it here!
   creates: {
     [clientCreate.key]: clientCreate,
+    [contactCreate.key]: contactCreate,
     [noteCreate.key]: noteCreate,
     [projectCreate.key]: projectCreate,
     [subProjectCreate.key]: subProjectCreate,
