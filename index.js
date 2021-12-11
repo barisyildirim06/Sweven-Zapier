@@ -1,4 +1,5 @@
 /* Triggers */
+const assetTrigger = require('./src/triggers/asset');
 const clientTrigger = require('./src/triggers/client');
 const contactTrigger = require('./src/triggers/contact');
 const noteTrigger = require('./src/triggers/note');
@@ -52,6 +53,7 @@ module.exports = {
   // If you want your trigger to show up, you better include it here!
   triggers: {
     /* Triggers */
+    [assetTrigger.key]: assetTrigger,
     [clientTrigger.key]: clientTrigger,
     [contactTrigger.key]: contactTrigger,
     [noteTrigger.key]: noteTrigger,
