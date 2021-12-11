@@ -3,6 +3,7 @@ const clientTrigger = require('./src/triggers/client');
 const contactTrigger = require('./src/triggers/contact');
 const noteTrigger = require('./src/triggers/note');
 const projectTrigger = require('./src/triggers/project');
+const siteTrigger = require('./src/triggers/site');
 const subProjectTrigger = require('./src/triggers/sub-project');
 const ticketTrigger = require('./src/triggers/ticket');
 const userTrigger = require('./src/triggers/user');
@@ -54,6 +55,7 @@ module.exports = {
     [contactTrigger.key]: contactTrigger,
     [noteTrigger.key]: noteTrigger,
     [projectTrigger.key]: projectTrigger,
+    [siteTrigger.key]: siteTrigger,
     [subProjectTrigger.key]: subProjectTrigger,
     [ticketTrigger.key]: ticketTrigger,
     [userTrigger.key]: userTrigger,
