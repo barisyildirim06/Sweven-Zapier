@@ -25,7 +25,8 @@ module.exports = {
     noun: 'Ticket',
     display: {
         label: 'New Ticket',
-        description: 'Triggers when new ticket is created.'
+        description: 'Triggers when new ticket is created.',
+        important: true
     },
     operation: {
         perform: listTickets,

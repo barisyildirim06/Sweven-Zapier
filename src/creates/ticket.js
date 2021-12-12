@@ -35,7 +35,8 @@ module.exports = {
     noun: 'ticket',
     display: {
         label: 'Create ticket',
-        description: 'Creates a new ticket.'
+        description: 'Creates a new ticket.',
+        important: true
     },
     operation: {
         perform: createticket,
