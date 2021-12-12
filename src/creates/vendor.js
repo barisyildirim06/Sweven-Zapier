@@ -30,7 +30,7 @@ module.exports = {
     key: 'vendor',
     noun: 'vendor',
     display: {
-        label: 'Create vendor',
+        label: 'Create Vendor',
         description: 'Creates a new vendor.'
     },
     operation: {

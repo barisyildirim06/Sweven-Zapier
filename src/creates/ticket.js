@@ -34,7 +34,7 @@ module.exports = {
     key: 'ticket',
     noun: 'ticket',
     display: {
-        label: 'Create ticket',
+        label: 'Create Ticket',
         description: 'Creates a new ticket.',
         important: true
     },

@@ -30,7 +30,7 @@ module.exports = {
     key: 'project',
     noun: 'project',
     display: {
-        label: 'Create project',
+        label: 'Create Project',
         description: 'Creates a new project.'
     },
     operation: {
