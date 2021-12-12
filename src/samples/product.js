@@ -1,0 +1,25 @@
+const productSample = {
+    id: 370,
+    sku_number: 'SKU00001',
+    name: 'Demo Product',
+    serial_number: 'SN00001',
+    category_id: 2258,
+    type_id: 343,
+    accounting_code: 'AC00001',
+    model: '',
+    color: '',
+    size: '',
+    weight: '',
+    class: '',
+    style: '',
+    brand: '',
+    unit_price: 20,
+    units_in_stock: 5,
+    units_on_order: 0,
+    discontinued: false,
+    description: 'Demo Product',
+    additional_comments: '',
+    rn_create_user: 749,
+    inactive: false
+}
+module.exports = { productSample }

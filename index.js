@@ -2,6 +2,7 @@
 const assetTrigger = require('./src/triggers/asset');
 const clientTrigger = require('./src/triggers/client');
 const contactTrigger = require('./src/triggers/contact');
+const productTrigger = require('./src/triggers/product');
 const noteTrigger = require('./src/triggers/note');
 const projectTrigger = require('./src/triggers/project');
 const siteTrigger = require('./src/triggers/site');
@@ -60,6 +61,7 @@ module.exports = {
     [assetTrigger.key]: assetTrigger,
     [clientTrigger.key]: clientTrigger,
     [contactTrigger.key]: contactTrigger,
+    [productTrigger.key]: productTrigger,
     [noteTrigger.key]: noteTrigger,
     [projectTrigger.key]: projectTrigger,
     [siteTrigger.key]: siteTrigger,
