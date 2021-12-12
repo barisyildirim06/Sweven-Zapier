@@ -29,6 +29,7 @@ const contactCreate = require('./src/creates/contact');
 const noteCreate = require('./src/creates/note');
 const projectCreate = require('./src/creates/project');
 const siteCreate = require('./src/creates/site');
+const subAssetCreate = require('./src/creates/sub-asset');
 const subProjectCreate = require('./src/creates/sub-project');
 const ticketCreate = require('./src/creates/ticket');
 const vendorCreate = require('./src/creates/vendor');
@@ -92,6 +93,7 @@ module.exports = {
     [noteCreate.key]: noteCreate,
     [projectCreate.key]: projectCreate,
     [siteCreate.key]: siteCreate,
+    // [subAssetCreate.key]: subAssetCreate,
     [subProjectCreate.key]: subProjectCreate,
     [ticketCreate.key]: ticketCreate,
     [vendorCreate.key]: vendorCreate,
