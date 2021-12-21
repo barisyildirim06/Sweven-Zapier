@@ -1,6 +1,6 @@
 const env = require('../../env');
 const { loginRequest } = require('../helper');
-// const { assetTypeSample } = require('../samples/asset-type');
+const { assetTypeSample } = require('../samples/asset-type');
 
 const listAssetTypes = async (z, bundle) => {
     const login = await loginRequest(z,bundle);
@@ -30,6 +30,6 @@ module.exports = {
     },
     operation: {
         perform: listAssetTypes,
-        // sample: assetTypeSample
+        sample: assetTypeSample
     }
 }
