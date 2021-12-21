@@ -39,6 +39,9 @@ const subAssetInputFields = [
         key: 'asset_type_id',
         label: 'Asset Type ID',
         type: 'integer',
+        helpText: 'Choose an Asset Type',
+        dynamic: 'assetTypes.id.name',
+        altersDynamicFields: true,
         required: true
     },
     {
