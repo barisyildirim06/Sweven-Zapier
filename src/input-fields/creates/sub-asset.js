@@ -33,7 +33,7 @@ const subAssetInputFields = [
         key: 'state',
         label: 'State',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'asset_type_id',
@@ -45,79 +45,79 @@ const subAssetInputFields = [
         key: 'make',
         label: 'Make',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'model',
         label: 'model',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'serial_number',
         label: 'serial_number',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'location',
         label: 'location',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'size',
         label: 'size',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'unit_size',
         label: 'unit_size',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'given_beginning_date',
         label: 'given_beginning_date',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'given_end_date',
         label: 'given_end_date',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'install_date',
         label: 'install_date',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'life_time_remaining',
         label: 'life_time_remaining',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'warranty_vendor',
         label: 'warranty_vendor',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'telecordia',
         label: 'telecordia',
         type: 'string',
-        required: true
+        // required: true
     },
     {
         key: 'barcode',
         label: 'barcode',
         type: 'string',
-        required: true
+        // required: true
     },
 ]
 module.exports = { subAssetInputFields }
