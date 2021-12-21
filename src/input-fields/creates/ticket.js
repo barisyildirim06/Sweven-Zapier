@@ -35,14 +35,20 @@ const ticketInputFields = [
         altersDynamicFields: true,
         required: true
     },
-    {
-        key: 'sub_status_id',
-        label: 'Sub Status ID',
-        type: 'integer',
-        helpText: 'Choose a Sub Status',
-        dynamic: 'subStatuses.id.name',
-        altersDynamicFields: true,
-        required: true
+    function (z, bundle) {
+        if (bundle.inputData.status_id) {
+            return [
+                {
+                    key: 'sub_status_id',
+                    label: 'Sub Status ID',
+                    type: 'integer',
+                    helpText: 'Choose a Sub Status',
+                    dynamic: 'subStatuses.id.name',
+                    altersDynamicFields: true,
+                    required: true
+                },
+            ]
+        }
     },
     {
         key: 'client_id',
@@ -71,5 +77,26 @@ const ticketInputFields = [
         altersDynamicFields: true,
         required: true
     },
+    {
+        key: 'po',
+        label: 'PO',
+        type: 'string',
+    },
+    {
+        key: 'client_nte',
+        label: 'Client NTE($)',
+        type: 'integer',
+    },
+    {
+        key: 'subject',
+        label: 'Subject',
+        type: 'string',
+    },
+    {
+        key: 'description',
+        label: 'Description',
+        type: 'string',
+    },
 ]
+
 module.exports = { ticketInputFields }
