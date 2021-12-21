@@ -16,7 +16,7 @@ const clientSample = {
     latitude: '0.000000',
     longitude: '0.000000',
     created_by: 749,
-    created_date: '2019-08-01T06:50:30-0500',
+    created_date: '2021-11-26',
     inactive: false
 }
 module.exports = { clientSample }

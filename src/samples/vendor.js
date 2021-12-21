@@ -30,7 +30,7 @@ const vendorSample = {
     latitude: '28.547805',
     longitude: '-81.386706',
     created_by: 749,
-    created_date: '2021-11-26 14:10:22.470000',
+    created_date: '2021-11-26',
     inactive: false,
     status_id: 1605
 }

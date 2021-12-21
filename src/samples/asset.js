@@ -19,7 +19,7 @@ const assetSample = {
     telecordia: null,
     barcode: null,
     created_by: null,
-    created_date: '2021-11-26 14:10:22.527000',
+    created_date: '2021-11-26',
     inactive: false
 }
 module.exports = { assetSample }

@@ -6,7 +6,7 @@ const userSample = {
     company_id: 3040,
     access_level_id: 1,
     access_rights_id: 1,
-    created_date: '2019-08-01T06:50:30-0500',
+    created_date: '2021-11-26',
     inactive: false
 }
 module.exports = { userSample }
