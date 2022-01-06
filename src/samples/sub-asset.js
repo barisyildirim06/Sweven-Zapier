@@ -1,7 +1,6 @@
 const subAssetSample = {
     id: 1,
     name: "Prueba manual",
-    sub_asset_id: 1,
     site_id: 153,
     asset_id: 138,
     state: "DN",
