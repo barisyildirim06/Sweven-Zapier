@@ -16,7 +16,7 @@ const createAsset = async (z, bundle) => {
         body: {
             'name' : bundle.inputData.name,
             'site_id' : bundle.inputData.site_id,
-            'asset_id' : bundle.inputData.asset_id,
+            'asset_id' : bundle.inputData.asset,
         }
     })
 

@@ -6,8 +6,8 @@ const vendorInputFields = [
         required: true
     },
     {
-        key: 'vendor_id',
-        label: 'Vendor ID',
+        key: 'vendor',
+        label: 'Vendor',
         type: 'integer',
         required: true
     },

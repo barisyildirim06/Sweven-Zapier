@@ -18,7 +18,7 @@ const contactInputFields = [
         required: true
     },
     {
-        key: 'company_id',
+        key: 'company',
         label: 'Company',
         type: 'integer',
         // helpText: 'Choose a Company',

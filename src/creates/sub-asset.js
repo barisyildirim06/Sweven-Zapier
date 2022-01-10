@@ -15,7 +15,7 @@ const createSubAsset = async (z, bundle) => {
         },
         body: {
             'name' : bundle.inputData.name,
-            'sub_asset_id' : bundle.inputData.sub_asset_id,
+            'sub_asset_id' : bundle.inputData.sub_asset,
             'site_id' : bundle.inputData.site_id,
             'asset_id' : bundle.inputData.asset_id,
             'state' : bundle.inputData.state,

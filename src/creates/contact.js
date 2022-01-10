@@ -14,7 +14,7 @@ const createContact = async (z, bundle) => {
             'Authorization': login.json.data.token,
         },
         body: {
-            'company_id' : bundle.inputData.company_id,
+            'company' : bundle.inputData.company,
             'first_name' : bundle.inputData.first_name,
             'last_name' : bundle.inputData.last_name,
             'email' : bundle.inputData.email,

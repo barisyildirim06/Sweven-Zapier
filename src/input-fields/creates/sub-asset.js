@@ -6,8 +6,8 @@ const subAssetInputFields = [
         required: true
     },
     {
-        key: 'sub_asset_id',
-        label: 'sub_asset_id',
+        key: 'sub_asset',
+        label: 'Sub Asset',
         type: 'integer',
         required: true
     },

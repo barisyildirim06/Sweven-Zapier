@@ -2,7 +2,7 @@ const assetSample = {
     id: 291,
     name: 'Demo Asset metu',
     site_id: 11953,
-    asset_id: '0001',
+    // asset_id: '0001',
     state: 'NY',
     asset_type_id: 4981,
     make: null,

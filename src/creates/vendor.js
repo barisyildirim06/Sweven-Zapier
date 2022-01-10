@@ -15,7 +15,7 @@ const createvendor = async (z, bundle) => {
         },
         body: {
             'vendor_name' : bundle.inputData.vendor_name,
-            'vendor_id' : bundle.inputData.vendor_id,
+            'vendor_id' : bundle.inputData.vendor,
             'address' : bundle.inputData.address,
             'do_not_use' : bundle.inputData.do_not_use,
         }

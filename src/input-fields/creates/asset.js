@@ -6,8 +6,8 @@ const assetInputFields = [
         required: true
     },
     {
-        key: 'asset_id',
-        label: 'Asset ID',
+        key: 'asset',
+        label: 'Asset',
         type: 'string',
         required: true
     },
