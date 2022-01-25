@@ -15,6 +15,7 @@ const createContact = async (z, bundle) => {
         },
         body: {
             'company' : bundle.inputData.company,
+            'company_id' : bundle.inputData.company,
             'first_name' : bundle.inputData.first_name,
             'last_name' : bundle.inputData.last_name,
             'email' : bundle.inputData.email,
