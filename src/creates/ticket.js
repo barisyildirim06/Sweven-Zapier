@@ -31,9 +31,28 @@ const createticket = async (z, bundle) => {
         }
     })
 
-    const tickets = ticketsPostRequest.json;
-
-    return tickets;
+    const ticket = ticketsPostRequest.json;
+    if (bundle.inputData.note !== '' && bundle.inputData.subject !== '') {
+        await z.request({
+            url: `${env.apiServer}/note/create`,
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Authorization': login.json.data.token,
+            },
+            body: {
+                'form': 'ServiceOrder',
+                'form_id': ticket.id,
+                'subject': bundle.inputData.subject,
+                'description': bundle.inputData.note,
+            }
+        });
+    }
+    const modifiedTicket = {
+        ...ticket,
+        note: bundle.inputData.note
+    }
+    return modifiedTicket;
 }
 
 module.exports = {
