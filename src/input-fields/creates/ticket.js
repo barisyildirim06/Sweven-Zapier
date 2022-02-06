@@ -5,7 +5,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose an User Assign ID',
         dynamic: 'users.id.email',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -14,7 +13,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose a Priority',
         dynamic: 'priorities.id.name',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -23,7 +21,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose a Type',
         dynamic: 'types.id.name',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -44,7 +41,6 @@ const ticketInputFields = [
                     type: 'integer',
                     helpText: 'Choose a Sub Status',
                     dynamic: 'subStatuses.id.name',
-                    altersDynamicFields: true,
                     required: true
                 },
             ]
@@ -56,7 +52,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose a Client',
         dynamic: 'clients.id.client_name',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -65,7 +60,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose a Project',
         dynamic: 'projects.id.name',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -74,7 +68,6 @@ const ticketInputFields = [
         type: 'integer',
         helpText: 'Choose a Site',
         dynamic: 'sites.id.name',
-        altersDynamicFields: true,
         required: true
     },
     {
@@ -91,6 +84,18 @@ const ticketInputFields = [
         key: 'subject',
         label: 'Subject',
         type: 'string',
+        altersDynamicFields: true,
+    },
+    function (z, bundle) {
+        if (bundle.inputData.subject) {
+            return [
+                {
+                    key: 'note',
+                    label: 'Note',
+                    type: 'string',
+                },
+            ]
+        }
     },
     {
         key: 'description',
