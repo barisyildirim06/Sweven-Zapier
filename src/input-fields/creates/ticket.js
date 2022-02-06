@@ -97,6 +97,22 @@ const ticketInputFields = [
         label: 'Description',
         type: 'string',
     },
+    {
+        key: 'asset_id',
+        label: 'Asset ID',
+        type: 'integer',
+        helpText: 'Choose an Asset',
+        dynamic: 'assets.id.name',
+        altersDynamicFields: false
+    },
+    {
+        key: 'contact_id',
+        label: 'Contact ID',
+        type: 'integer',
+        helpText: 'Choose a Contact',
+        dynamic: 'contacts.id.name',
+        altersDynamicFields: false
+    },
 ]
 
 module.exports = { ticketInputFields }
