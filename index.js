@@ -16,6 +16,7 @@ const assetTypesHiddenTrigger = require('./src/hidden-triggers/asset-types');
 const assetsHiddenTrigger = require('./src/hidden-triggers/assets');
 const clientSubStatusesHiddenTrigger = require('./src/hidden-triggers/client-sub-statuses');
 const clientsHiddenTrigger = require('./src/hidden-triggers/clients');
+const contactsHiddenTrigger = require('./src/hidden-triggers/contacts');
 const divisionsHiddenTrigger = require('./src/hidden-triggers/divisions');
 const prioritiesHiddenTrigger = require('./src/hidden-triggers/priorities');
 const productCategoriesHiddenTrigger = require('./src/hidden-triggers/product-categories');
@@ -80,6 +81,7 @@ module.exports = {
     [assetsHiddenTrigger.key]: assetsHiddenTrigger,
     [clientSubStatusesHiddenTrigger.key]: clientSubStatusesHiddenTrigger,
     [clientsHiddenTrigger.key]: clientsHiddenTrigger,
+    [contactsHiddenTrigger.key]: contactsHiddenTrigger,
     [divisionsHiddenTrigger.key]: divisionsHiddenTrigger,
     [prioritiesHiddenTrigger.key]: prioritiesHiddenTrigger,
     [productCategoriesHiddenTrigger.key]: productCategoriesHiddenTrigger,
