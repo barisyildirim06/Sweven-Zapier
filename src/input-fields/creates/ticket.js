@@ -63,6 +63,14 @@ const ticketInputFields = [
         required: true
     },
     {
+        key: 'sub_project_id',
+        label: 'Sub Project ID',
+        type: 'integer',
+        helpText: 'Choose a Sub Project',
+        dynamic: 'subProjects.id.name',
+        required: true
+    },
+    {
         key: 'site_id',
         label: 'Site ID',
         type: 'integer',

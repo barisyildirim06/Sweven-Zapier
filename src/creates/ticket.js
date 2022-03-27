@@ -21,6 +21,7 @@ const createticket = async (z, bundle) => {
             'sub_status_id' : bundle.inputData.sub_status_id,
             'client_id' : bundle.inputData.client_id,
             'project_id' : bundle.inputData.project_id,
+            'sub_project_id' : bundle.inputData.sub_project_id,
             'site_id' : bundle.inputData.site_id,
             'client_nte' : bundle.inputData.client_nte,
             'po' : bundle.inputData.po,
